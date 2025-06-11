@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julian's Portfolio Site</title>
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+
+        body {
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(68, 68, 201, 1) 35%, rgba(0, 212, 255, 1) 100%);
+        }
+
+        button {
+            position: fixed;
+            bottom: 8px;
+            right: 8px;
+            z-index: 2;
+            border-radius: 50%;
+            padding: 1%;
+            background-color: navy;
+            color: rgb(194, 255, 255);
+            box-shadow: 9px 9px 40px rgb(7, 67, 67);
+
+        }
+
+        button a {
+            font-size: 11px;
+            color: white;
+            transition: 0.2s;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-family: "Exo 2", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        nav {
+            display: flex;
+            background-color: #0d1760;
+            justify-content: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+        }
+
+        nav ul {
+            display: flex;
+            padding: 0 10%;
+            list-style: none;
+        }
+
+        nav ul a {
+            font-size: 16px;
+            padding: 0 15px;
+            color: white;
+            transition: 0.2s;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-family: "Exo 2", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        nav ul a:hover {
+            transition: 0.2s;
+            color: #52c5ff;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .hero {
+            padding-top: 100px;
+            font-family: "Exo 2", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: bold;
+            font-style: normal;
+        }        
+
+        .hero img {
+            border-style: none;
+            border-radius: 50%;
+            margin: 0 auto;
+            max-width: 450px;
+            display: block;
+        }
+
+        h1 {
+            color: black;
+            text-align: center;
+            font-size: 24px;
+            margin: 30px 0 100px;
+        }
+
+        .aboutme {
+            width: 80%;
+            max-width: 1000px;
+            height: auto;
+            background-color: white;
+            text-align: center;
+            padding: 40px 30px 70px;
+            margin: 0 auto;
+            box-shadow: 10px 10px 0px rgb(0, 0, 0, 40%), -10px -10px 0px rgb(255, 114, 114, 80%);
+        }
+
+        .aboutme-section {
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: wrap;
+        }
+
+        .aboutme-image {
+            width: 400px;
+            height: 470px;
+            background-image: url(profilepic.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .aboutme-text {
+            width: 43%;
+            height: auto;
+            margin-left: 40px;
+            text-align: left;
+            font-family: "Exo 2", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: bold;
+            font-style: normal;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <button><a href="#top">Back to <br>the top</a></button>
+
+    <nav>
+        <ul>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div id="top" class="container">
+            <img src="profilepicture.jpg">
+            <h1>Hi, I am Julian. It is very nice to meet you!</h1>
+        </div>
+    </section>
+
+    <section id="aboutme" class="aboutme">
+        <h2>About Me</h2>
+        <div class="aboutme-section">
+            <div class="img">
+                <div class="aboutme-image"></div>
+            </div>
+            <div class="aboutme-text">
+                <p>My name is Julian Cöster. I am married to my beautiful wife Elizabeth and I work as a hotel porter. 
+                    However, I also enjoy creating interactve and amazing webpages!
+                </p>
+                
+                <p>I am currently undergoing training in web and frontend development, focusing on modern web technologies 
+                    such as HTML5, CSS3, JavaScript, jQuery, Bootstrap 5, PHP7, and Python.
+                </p>
+                    
+                <p>Driven by a high level of self-motivation, a structured approach to learning, and a genuine interest 
+                    in clean, user-centered code, I am actively building a portfolio of projects &hyphen; with the goal of 
+                    soon contributing to professional web projects. Check out some of my own projects down below this section.
+                </p>
+                    
+                <p>&#128269; What sets me apart:
+                    <ul>
+                        <li>Passion for web design & usability</li>
+                        <li>Quick comprehension & analytical thinking</li>
+                        <li>Hands-on learning & first personal projects</li>
+                        <li>Willingness to take responsibility and grow further</li>
+                    </ul>
+                </p>
+
+                <p>&#128161; Goal: To start a career in frontend development, ideally in a team that values clean code, 
+                    continuous learning, and modern tools.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <p></p>
+    </section>
+
+</body>
+</html>
