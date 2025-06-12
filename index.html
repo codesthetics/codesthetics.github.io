@@ -15,9 +15,18 @@
 
         body {
             background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(68, 68, 201, 1) 35%, rgba(0, 212, 255, 1) 100%);
+            font-family: "Exo 2", sans-serif;
+
         }
 
-        button {
+        h1 h2 h3 {
+            font-family: "Exo 2", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        #backbutton {
             position: fixed;
             bottom: 8px;
             right: 8px;
@@ -27,19 +36,14 @@
             background-color: navy;
             color: rgb(194, 255, 255);
             box-shadow: 9px 9px 40px rgb(7, 67, 67);
-
         }
 
-        button a {
+        #backbutton a {
             font-size: 11px;
             color: white;
             transition: 0.2s;
             text-transform: uppercase;
             text-decoration: none;
-            font-family: "Exo 2", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: bold;
-            font-style: normal;
         }
 
         nav {
@@ -64,10 +68,6 @@
             transition: 0.2s;
             text-transform: uppercase;
             text-decoration: none;
-            font-family: "Exo 2", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: bold;
-            font-style: normal;
         }
 
         nav ul a:hover {
@@ -85,10 +85,6 @@
 
         .hero {
             padding-top: 100px;
-            font-family: "Exo 2", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: bold;
-            font-style: normal;
         }        
 
         .hero img {
@@ -100,7 +96,7 @@
         }
 
         h1 {
-            color: black;
+            color: white;
             text-align: center;
             font-size: 24px;
             margin: 30px 0 100px;
@@ -108,11 +104,11 @@
 
         .aboutme {
             width: 80%;
-            max-width: 1000px;
+            max-width: 900px;
             height: auto;
             background-color: white;
             text-align: center;
-            padding: 40px 30px 70px;
+            padding: 25px 30px 40px;
             margin: 0 auto;
             box-shadow: 10px 10px 0px rgb(0, 0, 0, 40%), -10px -10px 0px rgb(255, 114, 114, 80%);
         }
@@ -138,10 +134,106 @@
             height: auto;
             margin-left: 40px;
             text-align: left;
-            font-family: "Exo 2", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: bold;
-            font-style: normal;
+        }
+
+        #projects {
+            width: 80%;
+            max-width: 900px;
+            height: auto;
+            text-align: center;
+            padding: 75px 30px 40px;
+            margin: 0 auto;
+        }
+
+        .projects {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: wrap;
+        }
+
+        #projects h2 {
+            color: white;
+        }
+
+        .bible-project {
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            position: relative;
+            border-radius: 10px;
+            background-image: url(../1-html/openbible.jpg);
+            margin: 20px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .text {
+            position: absolute;
+            width: 90%;
+            height: 26px;
+            left: 0;
+            bottom: 0;
+            z-index: 2;
+            background-color: white;
+            overflow: hidden;
+            transition: 0.2s;
+            padding: 20px;
+        }
+
+        .text:hover {
+            height: 120px;
+            transition: 0.3s;
+        }
+
+        .text h3 {
+            margin-top: 3px;
+        }
+
+        .content {
+            color: black;
+        }
+
+        .pagebutton {
+            border: 5px solid lightblue;
+            border-radius: 8px;
+            width: 160px;
+            margin-bottom: 100px;
+            margin-left: 10px;
+            text-decoration: none;
+        }
+
+        .bbc-project {
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            position: relative;
+            border-radius: 10px;
+            background-image: url(../2-css/bbcnews.png);
+            margin: 20px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .contact {
+            width: 80%;
+            max-width: 900px;
+            height: auto;
+            text-align: center;
+            padding: 75px 30px 40px;
+            margin: 0 auto;
+        }
+
+        .contact-form {
+
+        }
+
+        .contact-info {
+
+        }
+        
+        .contact-message {
+
         }
 
     </style>
@@ -149,18 +241,18 @@
 
 <body>
 
-    <button><a href="#top">Back to <br>the top</a></button>
+    <button id="backbutton"><a href="#top">Back to <br>the top</a></button>
 
     <nav>
         <ul>
             <li><a href="#aboutme">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#myprojects">My Projects</a></li>
+            <li><a href="#contactme">Contact</a></li>
         </ul>
     </nav>
 
-    <section class="hero">
-        <div id="top" class="container">
+    <section class="hero" id="top">
+        <div class="container">
             <img src="profilepicture.jpg">
             <h1>Hi, I am Julian. It is very nice to meet you!</h1>
         </div>
@@ -202,8 +294,60 @@
         </div>
     </section>
 
-    <section>
-        <p></p>
+    <section id="projects">
+        <div class="project" id="myprojects">
+            <h2>My Projects</h2>
+            <div class="projects">
+                
+                <div class="bible-project">
+                    <div class="text">
+                        <h3 class="project-name">Bible Facts</h3>
+                        <div class="content">
+                            <p>A strict HTML5 project about some facts about the Bible.</p>
+                        </div>
+                        <a class="pagebutton" href="../1-html/The Bible_2.html" target="_blank">View Project</a>
+                    </div>
+                </div>
+
+                <div class="bbc-project">
+                    <div class="text">
+                        <h3 class="project-name">BBC News Clone</h3>
+                        <div class="content">
+                            <p>This project is a clone of the BBC news website.</p>
+                        </div>
+                        <a class="pagebutton" href="" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contactme" class="contact">
+        <h2>Contact</h2>
+        <p>Use this form to get in touch. I would love to hear from you!</p>
+        <form class="contact-form">
+
+            <div class="contact-details">
+
+                <label for="name">Name</label>
+                <input type="text" id="yourname" placeholder="Your name">
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="Reason for your message">
+
+                <label for="emailaddress">Email Address</label>
+                <input type="text" id="email" placeholder="Your email address">
+
+            </div>
+
+            <div class="contact-message">
+
+                <label for="message">Message</label>
+                <textarea id="msg" rows=15 placeholder="Type your message"></textarea>
+                <button type="submit" class="submitbutton">Submit</button>
+
+            </div>
+        </form>
     </section>
 
 </body>
