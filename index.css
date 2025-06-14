@@ -18,10 +18,7 @@
             z-index: 2;
             border-radius: 50%;
             padding: 8px;
-            margin: 2px 2px;
-            width: 38px;
-            height: 38px;
-            opacity: 70%;
+            opacity: 80%;
             background-color: navy;
             color: rgb(194, 255, 255);
             box-shadow: 9px 9px 40px rgb(7, 67, 67);
@@ -73,14 +70,14 @@
         }
 
         .hero {
-            padding-top: 100px;
+            padding-top: 80px;
         }        
 
         .hero img {
             border-style: none;
             border-radius: 50%;
             margin: 0 auto;
-            max-width: 450px;
+            max-width: 500px;
             display: block;
         }
 
@@ -145,13 +142,13 @@
             color: white;
         }
 
-        .bible-project {
+        .capstone-project-1 {
             width: 400px;
             height: 400px;
             background-color: white;
             position: relative;
             border-radius: 10px;
-            background-image: url(images/open-bible.jpg);
+            background-image: url(./images/resume.jpg);
             margin: 20px;
             background-size: cover;
             background-position: center;
@@ -159,8 +156,9 @@
 
         .text {
             position: absolute;
-            width: 90%;
-            height: 26px;
+            box-sizing: border-box;
+            width: 100%;
+            height: 65px;
             left: 0;
             bottom: 0;
             z-index: 2;
@@ -171,7 +169,7 @@
         }
 
         .text:hover {
-            height: 120px;
+            height: 150px;
             transition: 0.3s;
         }
 
