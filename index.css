@@ -145,13 +145,13 @@
             color: white;
         }
 
-        .bible-project {
+        .capstone-project-1 {
             width: 400px;
             height: 400px;
             background-color: white;
             position: relative;
             border-radius: 10px;
-            background-image: url(images/open-bible.jpg);
+            background-image: url(./images/hero.jpg);
             margin: 20px;
             background-size: cover;
             background-position: center;
