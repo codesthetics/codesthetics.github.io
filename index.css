@@ -123,7 +123,7 @@
         }
 
         #projects {
-            width: 80%;
+            width: 90%;
             max-width: 900px;
             height: auto;
             text-align: center;
@@ -154,6 +154,18 @@
             background-position: center;
         }
 
+        .motivational-poster {
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            position: relative;
+            border-radius: 10px;
+            background-image: url(./images/chems.png);
+            margin: 20px;
+            background-size: cover;
+            background-position: center;
+        }
+
         .text {
             position: absolute;
             box-sizing: border-box;
@@ -169,8 +181,8 @@
         }
 
         .text:hover {
-            height: 150px;
-            transition: 0.3s;
+            height: 165px;
+            transition: 0.4s;
         }
 
         .text h3 {
