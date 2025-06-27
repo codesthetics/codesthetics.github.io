@@ -1,0 +1,21 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-brand > a {
+    text-decoration: none;
+    color: white;
+}
+
+.gradient-background {
+  background: linear-gradient(300deg, #000000, #615d87, #2f3338);
+  background-size: 180% 180%;
+  animation: gradient-animation 5s ease infinite;
+}
+
+.gradient-background2 {
+  background: linear-gradient(300deg, #000000, #837fa2, #676a6e);
+  background-size: 180% 180%;
+  animation: gradient-animation 5s ease infinite;
+}
